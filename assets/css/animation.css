@@ -1,0 +1,19 @@
+#about > div > figure > img ,#app > div > figure > img{
+    filter: drop-shadow(5px 5px 10px #db0000);
+    animation: updown 3s infinite ease-in-out;
+}
+#hero > div > div.hero-image > img{
+    animation: updown 5s infinite ease-in-out;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Move up */
+    }
+    100% {
+        transform: translateY(0); /* Move back to original position */
+    }
+}
